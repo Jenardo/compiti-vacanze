@@ -1,5 +1,8 @@
 .footer {
-  border-top: 2px solid $orange;
+  &__border {
+    border-top: 2px solid $orange;
+    margin: 0;
+  }
 
   @include media-breakpoint-up(md) {
     display: flex;
@@ -18,7 +21,6 @@
 
     @include media-breakpoint-up(md) {
       margin: 0;
-      flex-grow: 1;
     }
   }
 
@@ -32,7 +34,6 @@
 
       @include media-breakpoint-up(md) {
         text-align: left;
-        flex-grow: 1;
       }
     }
   }
@@ -71,7 +72,6 @@
     text-align: center;
     margin-bottom: 0;
     @include media-breakpoint-up(md) {
-      flex-grow: 1;
     }
   }
 
@@ -82,10 +82,15 @@
     color: $gray;
     text-transform: uppercase;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       margin: 0;
-      flex-grow: 1;
-      padding-left: 200px;
+      padding-left: 290px;
+    }
+
+    @include media-breakpoint-up(md) {
+      &__text {
+        text-align: end;
+      }
     }
   }
 }
