@@ -1,5 +1,4 @@
-Webpack + SASS + Handlebars + Dev Server Boilerplate
-==================
+# Webpack + SASS + Handlebars + Dev Server Boilerplate
 
 To get started run:
 `npm install`
@@ -13,12 +12,12 @@ The _Handlebars_ files goes inside the templates directory.
 **Changes in real time**
 
 1. Start the _Webpack Dev Server_:
-`npm run dev`
+   `npm start`
 
 2. Go to the url:
-`http://localhost:8080/webpack-dev-server/`
+   `http://localhost:8080`
 
 3. Start to code and see the magic happens.
 
 4. After you finish the development, run the next command to have all your code available and minified in your build directory:
-`npm run build`
+   `npm run build`
