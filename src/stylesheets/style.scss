@@ -1,0 +1,36 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+// Colors
+@import "./global/color.scss";
+// Font
+@import "../fonts/style.css";
+
+* {
+  background-color: white;
+  font-family: "Monserrat", sans-serif;
+  src: url("../fonts/fonts/icomoon.eot");
+
+  .row,
+  .col,
+  .container,
+  div,
+  span {
+    background-color: transparent;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    background-color: transparent;
+  }
+}
+
+// Atoms
+@import "./atoms/btn";
+
+// Elements
+@import "./elements/header";
+@import "./elements/nav";
+@import "./elements/dreamshare";
+@import "./elements/suggestion";

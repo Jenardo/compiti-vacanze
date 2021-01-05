@@ -1,0 +1,31 @@
+{
+  "name": "compiti-vacanze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --verbose --colors --display-error-details --progress --optimize-minimize",
+    "start": "node_modules/.bin/webpack-dev-server --colors --progress"
+  },
+  "author": "Gennaro Rivetti",
+  "license": "ISC",
+  "devDependencies": {
+    "algoliasearch": "^3.22.1",
+    "bootstrap": "^4.5.3",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "handlebars": "^4.0.8",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^2.28.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "popper.js": "^1.16.1"
+  }
+}
