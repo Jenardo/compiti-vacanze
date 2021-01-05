@@ -1,0 +1,91 @@
+.footer {
+  border-top: 2px solid $orange;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 37px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    font-size: 16px;
+    color: $orange;
+    margin: 20px 0 12px;
+    text-align: center;
+    font-weight: bold;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+      flex-grow: 1;
+    }
+  }
+
+  &__company {
+    &__title {
+      font-size: 14px;
+      font-weight: bold;
+      color: $black;
+      text-align: center;
+      margin-bottom: 0;
+
+      @include media-breakpoint-up(md) {
+        text-align: left;
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 20px;
+    padding: 0;
+
+    &__el {
+      font-size: 13px;
+      color: $gray;
+      padding: 0 10px;
+
+      @include media-breakpoint-up(md) {
+        &:first-child {
+          padding-top: 10px;
+        }
+        padding: 3px 0;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      flex-flow: column;
+      margin: 0;
+    }
+  }
+
+  &__partners {
+    font-size: 14px;
+    font-weight: bold;
+    color: $black;
+    text-align: center;
+    margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      flex-grow: 1;
+    }
+  }
+
+  &__logo {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 13px;
+    color: $gray;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+      flex-grow: 1;
+      padding-left: 200px;
+    }
+  }
+}

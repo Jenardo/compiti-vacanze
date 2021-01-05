@@ -24,6 +24,15 @@
   p {
     background-color: transparent;
   }
+
+  a {
+    color: $black;
+
+    &:hover {
+      text-decoration: none;
+      color: $black;
+    }
+  }
 }
 
 // Atoms
@@ -35,3 +44,4 @@
 @import "./elements/dreamshare";
 @import "./elements/suggestion";
 @import "./elements/activities";
+@import "./elements/footer";
